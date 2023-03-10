@@ -8,5 +8,6 @@ If you are a student in the Web and Mobile class at UNICAP, feel free to contrib
 This repository is licensed under the MIT License. See the LICENSE file for more information.
 
 ## Summary class activities
-1. [Biografia] (https://exemplo.com/)
+1. [Biografia](https://exemplo.com/)
+
 
