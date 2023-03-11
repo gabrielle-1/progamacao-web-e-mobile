@@ -8,6 +8,6 @@ If you are a student in the Web and Mobile class at UNICAP, feel free to contrib
 This repository is licensed under the MIT License. See the LICENSE file for more information.
 
 ## Summary class activities
-1. [Biografia](https://exemplo.com/)
+1. [Cadastro de Usuário](https://user-registration-delta.vercel.app) - [Código no GitHub](https://github.com/gabrielle-1/programacao-web-e-mobile/tree/main/user-registration)
 
 
