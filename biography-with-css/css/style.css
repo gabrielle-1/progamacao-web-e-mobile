@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+body {
+    background-color: #F9E6EA;
+}
+
+/** Navbar **/
+.navbar {
+    text-align: end;
+    background-color: #C75F77;
+}
+
+.navbar-links {
+    width: 100%;
+    height: 50px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;   
+}
+
+.navbar-links li a {
+    display: block;
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;    
+}
+
+.navbar-links li {
+    display: inline-block;
+    text-decoration: none;    
+    padding-right: 3rem;
+}
+
+
+.navbar-links li a:hover {
+    text-decoration: none;
+    color: #40474b;
+    text-decoration: none;
+}
+
+
+.sidebar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 97%;
+    margin-top: -3%;    
+}
+
+.sidebar .side-list{
+    position: absolute;
+    background: transparent;
+    height: 100vh;
+    width: 6vw;
+    top: 84px;
+    right: 0;
+    list-style: none;
+    transition: all 0.5s ease;    
+}
+
+.sidebar .side-list .side-item {
+    display: flex;
+    padding: 25px 30px 25px;
+}
+
+.sidebar .side-list .side-item img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.sidebar .menu #menu-icon {
+    display: block;
+    text-align: center;
+  }
+  
+  .sidebar .menu #menu-icon:hover {
+    cursor: pointer;
+  }
+  
+#items{
+    display: none;
+}
+
+/** About me **/
+.container {
+    margin: 2rem 0 auto;
+}
+
+.quem-sou-eu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: start;
+}
+
+.quem-sou-eu h1, p{
+    margin-top: 0;
+}
+
+.about-me {
+    width: 50%; /* largura da div centralizada */
+    margin: 0 auto; /* margens esquerda e direita iguais e automáticas */
+    display: flex;
+    flex-direction: row;
+}
+
+.imagem{
+    margin-left: 40px;    
+}
+
+.final {    
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
+    align-items: center;
+    justify-content: center;
+}
+
+.audio {
+    margin: 10px 10px;
+}
+
+footer {
+    background-color: #C75F77;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;   
+}

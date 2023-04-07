@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Gabrielle Rodrigues</title>
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul class="navbar-links">
+            <li><a href="">Início</a></li>
+            <li><a href="">Sobre</a></li>
+            <li><a href="">Contato</a></li>
+        </ul>
+    </nav>
+
+    <div class="sidebar">
+        <div class="menu">
+            <img id="menu-icon" src="imgs/menu.png" alt="Icon menu" onclick="openMenu()">
+        </div>
+
+        <ul class="side-list" id="items">
+            <li class="side-item"><a href="http://github.com/gabrielle-1" target="_blank"><img src="imgs/github.png" alt="GitHub Gabrielle"></a></li>
+            <li class="side-item"><a href="https://www.linkedin.com/in/gabrielle-1" target="_blank"><img src="imgs/linkedin.png" alt="LinkedIn Gabrielle"></a></li>
+            <li class="side-item"><a href="https://open.spotify.com/user/224jmea5d22vovt7r4fdbzvcq?si=979fdf708bc04056" target="_blank"><img src="imgs/spotify.png" alt="Spotify Gabrielle"></a></li>
+        </ul>
+
+    </div>
+
+    <div class="container">
+        <div class="about-me">
+
+            <div class="quem-sou-eu">
+                <h1>Gabrielle Rodrigues</h1>                
+                <p>Atualmente estou no 5° período em Bacharel em <strong>Ciência da Computação</strong> pela UNICAP durante o turno da manhã. 
+                    Já durante a tarde/noite eu estou trabalhando como Desenvolvedora Web PHP na empresa Zaite Tecnologia.    
+                </p>
+            </div>
+            
+            <div class="imagem">
+                <img src="https://avatars.githubusercontent.com/u/73626380?v=4" alt="Foto de Gabrielle Rodrigues" height="230" width="230">
+            </div>    
+            
+        </div>   
+
+        <!-- <section>
+            <h3>Encontre-me</h3>
+            <a href="mailto:gabriellerodriguesmd@gmail.com" target="_blank">gabriellerodriguesmd@gmail.com</a>
+            <a href="https://www.linkedin.com/in/gabrielle-1" target="_blank">linkedin</a>
+        </section> -->
+
+    </div>
+
+
+    <div class="final">
+        <div class="video">
+            <video width="400" controls>
+                <source src="https://www.w3schools.com/tags/movie.mp4" type="video/mp4">
+                Seu browser não suporta vídeo. Favor abrir url em outro navegador para exibir o vídeo.
+            </video>
+        </div>
+    
+        <div class="audio">
+            <audio controls>
+                <source src="https://christianosantos.com/files/cs1/musica01.mp3" type="audio/mp3">
+                Seu browser não suporta áudio. Favor abrir url em outro navegador para exibir o áudio.
+            </audio>    
+        </div>
+    </div>    
+    
+    <footer>
+        <em>Você é o único representante de seu sonho na face da terra. - Emicida</em>
+        
+        <div class="autor">
+            <p>&copy; 2023 Gabrielle Rodrigues</p>
+        </div>        
+    </footer>
+
+    <script>
+        function openMenu() {
+            if  (items.style.display == 'block') {
+                items.style.display = 'none';
+            } else {
+                items.style.display = 'block';
+            }
+        }
+    </script>
+
+</body>
+</html>
