@@ -10,4 +10,6 @@ This repository is licensed under the MIT License. See the LICENSE file for more
 ## Summary class activities
 1. [Cadastro de Usuário](https://user-registration-delta.vercel.app) - [Código no GitHub](https://github.com/gabrielle-1/programacao-web-e-mobile/tree/main/user-registration)
 
+2. [Biografia (sem css)](/biography/index.html) - [Código no GitHub](https://github.com/gabrielle-1/programacao-web-e-mobile/tree/main/biography)
+
 
