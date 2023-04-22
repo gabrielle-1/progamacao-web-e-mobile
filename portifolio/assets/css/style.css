@@ -692,6 +692,7 @@ img {
 /* Portifolio */
 .portifolio__container {
     overflow: initial;
+<<<<<<< HEAD
 } 
 
 .portifolio__content {
@@ -700,6 +701,16 @@ img {
 
 .portifolio__img {
     width: 265px;
+=======
+}
+
+.portifolio__content {
+    padding: 0 1.5rem;
+}
+
+.portifolio__img {
+    width: 300px;
+>>>>>>> cde181c796f4175403fc423ea5c43150e8e0b86f
     border-radius: .5rem;
     justify-self: center;
 }
@@ -713,7 +724,13 @@ img {
     margin-bottom: var(--mb-0-75);
 }
 
+<<<<<<< HEAD
 .portifolio__button:hover .button__icon {
     transform: translateX(.25rem);
 }
 
+=======
+.portifolio__button:hover {
+    transform: translateX(0.25rem);
+}
+>>>>>>> cde181c796f4175403fc423ea5c43150e8e0b86f
