@@ -11,7 +11,7 @@
     <!-- Styles -->
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <!-- Swiper -->
+    <!-- Swiper css -->
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
     <title>Gabrielle Rodrigues</title>
@@ -26,7 +26,7 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list grid">
                     <li class="nav__item">
-                        <a href="#home" class="nav__link">                            
+                        <a href="#home" class="nav__link active-link">                            
                             <i class="uil uil-estate nav__icon"></i> Home
                         </a>
                     </li>
@@ -62,6 +62,10 @@
             </div>
 
             <div class="nav__btns">
+
+                <!-- Botão para mudar tema -->
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+
                 <div class="nav__toggle" id="nav-toggle">
                     <i class="uil uil-apps"></i> 
                 </div>
@@ -124,18 +128,17 @@
                 </div>
 
                 <div class="home__scroll">
-                    <a href="" class="home__scroll-button button--flex">
+                    <a href="#about" class="home__scroll-button button--flex">
                         <i class="uil uil-mouse-alt home__scroll-mouse"></i>
                         <span class="home__scroll-name">Scroll down</span>
                         <i class="uil uil-arrow-down home__scroll-arrow"></i>
                     </a>
-                </div>
+                </div>  
 
             </div>
         </section>
 
         <!-- sobre -->
-
         <section class="about section" id="about">
             <h2 class="section__title">Sobre mim</h2>
             <span class="section__subtitle">Descrição</span>            
@@ -411,7 +414,7 @@
                         </div>
                         
                         <!-- Qualification 3 -->
-                        <div class="qualification__data">
+                        <!-- <div class="qualification__data">
                             <div>
                                 <h3 class="qualification__title">Ciência da Computação</h3>
                                 <span class="qualification__subtitle">Universidade Católica de PE - UNICAP</span>
@@ -426,15 +429,14 @@
                                 <span class="qualification__rounder"></span>
                                 <span class="qualification__line"></span>
                             </div>
-                        </div>
+                        </div> -->
 
                         <!-- Qualification 4 -->
-                        <div class="qualification__data">
+                        <!-- <div class="qualification__data">
                             <div></div>
                             
                             <div>
                                 <span class="qualification__rounder"></span>
-                                <!-- <span class="qualification__line"></span> -->
                             </div>
 
 
@@ -448,7 +450,7 @@
                                 </div>
                             </div>
                           
-                        </div>
+                        </div> -->
                     </div>
 
                     <!-- Qualification Content 2 -->
@@ -456,12 +458,12 @@
                         <!-- Qualification 1 -->
                         <div class="qualification__data">
                             <div>
-                                <h3 class="qualification__title">Ciência da Computação</h3>
-                                <span class="qualification__subtitle">Universidade Católica de PE - UNICAP</span>
+                                <h3 class="qualification__title">Estágio em Desenvolvimento Web</h3>
+                                <span class="qualification__subtitle">Zaite Tecnologia</span>
 
                                 <div class="qualification__calendar">
                                     <i class="uil uil-calendar-alt"></i>
-                                    2022 - 2022
+                                    2021 - 2023
                                 </div>
                             </div>
 
@@ -482,19 +484,19 @@
                             </div>
 
                             <div>
-                                <h3 class="qualification__title">Análise e Desenvolvimento de Sistemas</h3>
-                                <span class="qualification__subtitle">ETE Professor Lucilo Àvila Pessoa - ETELAP</span>
+                                <h3 class="qualification__title">Programadora Web</h3>
+                                <span class="qualification__subtitle">Zaite Tecnologia</span>
 
                                 <div class="qualification__calendar">
                                     <i class="uil uil-calendar-alt"></i>
-                                    2022 - 2022
+                                    2023 - 2023
                                 </div>
                             </div>
 
                         </div>
                         
                         <!-- Qualification 3 -->
-                        <div class="qualification__data">
+                        <!-- <div class="qualification__data">
                             <div>
                                 <h3 class="qualification__title">Ciência da Computação</h3>
                                 <span class="qualification__subtitle">Universidade Católica de PE - UNICAP</span>
@@ -509,15 +511,14 @@
                                 <span class="qualification__rounder"></span>
                                 <span class="qualification__line"></span>
                             </div>
-                        </div>
+                        </div> -->
 
                         <!-- Qualification 4 -->
-                        <div class="qualification__data">
+                        <!-- <div class="qualification__data">
                             <div></div>
                             
                             <div>
                                 <span class="qualification__rounder"></span>
-                                <!-- <span class="qualification__line"></span> -->
                             </div>
 
 
@@ -531,7 +532,7 @@
                                 </div>
                             </div>
                           
-                        </div>
+                        </div> -->
                     </div>
                 </div>
 
@@ -539,8 +540,8 @@
         </section>
 
         <!-- Services -->
-        <section class="services section" id="service">
-            <h2 class="section__title">Services</h2>
+        <section class="services section" id="services">
+            <h2 class="section__title">Serviços</h2>
             <span class="section__subtitle">O que eu ofereço</span>
 
             <div class="services__container container grid">
@@ -661,14 +662,15 @@
         </section>
 
         <!-- Portifolio -->
-        <section class="portifolio section" id="portifolio">
+        <!-- <section class="portifolio section" id="portifolio">
             <h2 class="section__title">Portifolio</h2>
             <span class="section__subtitle">Trabalhos mais recentes</span>
 
-            <div class="portifolio__container container">
-                <div>
-                    <!-- Portifolio 1 -->
-                    <div class="portifolio__content grid">
+            <div class="portifolio__container container swiper">
+                <div class="swiper-wrapper">
+                    
+                    < Portifolio 1 >
+                    <div class="portifolio__content grid swiper-slide">
                         <img src="assets/img/portfolio1.jpg" alt="" class="portifolio__img">
 
                         <div class="portifolio__data">
@@ -680,11 +682,11 @@
                                 Demonstração 
                                 <i class="uil uil-arrow-right button__icon"></i>
                             </a>                            
-                    </div>
+                        </div>
                     </div>
 
-                    <!-- Portifolio 2 -->
-                    <div class="portifolio__content grid">
+                    < Portifolio 2 >
+                    <div class="portifolio__content grid swiper-slide">
                         <img src="assets/img/portfolio2.jpg" alt="" class="portifolio__img">
 
                         <div class="portifolio__data">
@@ -699,8 +701,8 @@
                         </div>
                     </div>
 
-                    <!-- Portifolio 3 -->
-                    <div class="portifolio__content grid">
+                    < Portifolio 3 >
+                    <div class="portifolio__content grid swiper-slide">
                         <img src="assets/img/portfolio3.jpg" alt="" class="portifolio__img">
 
                         <div class="portifolio__data">
@@ -713,19 +715,164 @@
                                 <i class="uil uil-arrow-right button__icon"></i>
                             </a>                        
                         </div>
-                    </div>
-
+                    </div>       
 
                 </div>
+                
+                <div class="swiper-arrows">
+                    < Arrows >
+                    <div class="swiper-button-next">
+                        <i class="uil uil-angle-right-b swiper-portifolio-icon"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="uil uil-angle-left-b swiper-portifolio-icon"></i>
+                    </div>
+
+                    < Pagination >
+                    <div class="swiper-pagination"></div>
+                </div>               
+                
+            </div>
+
+        </section> -->
+
+        <!-- Project in mind -->
+        <section class="project section">
+            <div class="project__bg">
+                <div class="project__container container grid">
+                    <div class="project__data">
+                        <h2 class="project__title">Você tem um novo projeto?</h2>
+                        <p class="project__description">Contrate agora e receba 30% de desconto em seu novo projeto!</p>
+                        <a href="#contact" class="button button--flex button--white">
+                            Entre em contato
+                            <i class="uil uil-message project__icon button__icon"></i>
+                        </a>
+                    </div>
+
+                    <img src="assets/img/project-gabs.png" alt="" class="project__img">
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact me -->
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Entre em contato comigo</h2>
+            <span class="section__subtitle">Em apenas um clique</span>
+
+            <div class="contact__container container grid">
+                <div>
+                    
+                    <div class="contact__information">
+                        <i class="uil uil-phone contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Telefone</h3>
+                            <a href="tel:04499999999">
+                                <span class="contact__subtitle">(081) 98199-4831</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact__information">
+                        <i class="uil uil-envelope contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Email</h3>
+                            <a href="mailto:gabriellerodriguesmd@gmail.com">
+                                <span class="contact__subtitle">gabriellerodriguesmd@gmail.com</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact__information">
+                        <i class="uil uil-map-marker contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Localização</h3>
+                            <span class="contact__subtitle">Recife - PE</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <form action="" class="contact__form grid">
+                    <div class="contacT__inputs grid">
+                        <div class="contact__content">
+                            <label for="Nome" class="contact__label">Nome</label>
+                            <input type="text" class="contact__input" name="name">
+                        </div>
+                        <div class="contact__content">
+                            <label for="Nome" class="contact__label">Email</label>
+                            <input type="email" class="contact__input" name="email">
+                        </div>
+                    </div>
+                    <div class="contact__content">
+                        <label for="Nome" class="contact__label">Projeto</label>
+                        <input type="text" class="contact__input" name="projeto">
+                    </div>
+                    <div class="contact__content">
+                        <label for="Nome" class="contact__label">Mensagem</label>
+                        <textarea name="mensagem" id="" cols="0" rows="7" class="contact__input"></textarea>
+                    </div>
+
+                    <div>
+                        <a href="" class="button button--flex">
+                            Enviar mensagem
+                            <i class="uil uil-message button__icon"></i>
+                        </a>
+                    </div>
+
+                </form>
+
             </div>
         </section>
 
     </main>
 
-    <script src="assets/js/main.js"></script>
-<<<<<<< HEAD
-=======
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <h2 class="footer__title">Gabrielle</h2>
+                    <span class="footer__subtitle">Desenvolvedora Frontend</span>
+                </div>
+                
+                <ul class="footer__links">
+                    <li>
+                        <a href="#services" class="footer__link">Serviços</a>
+                    </li>
+                    <li>
+                        <a href="#portifolio" class="footer__link">Portifolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="footer__link">Contato</a>
+                    </li>
+                </ul>
+
+                <div class="footer__socials">
+                    <a href="https://github.com/gabrielle-1" class="footer__social" target="_blank">
+                        <i class="uil uil-github"></i>
+                    </a>
+                    <a href="" class="footer__social" target="_blank">
+                        <i class="uil uil-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/gabrielle-1" class="footer__social" target="_blank">
+                        <i class="uil uil-linkedin"></i>
+                    </a>
+                </div>
+
+            </div>
+
+            <p class="footer__copy">&#169; Gabrielle. All right reserved</p>
+
+        </div>
+    </footer>
+
+    <!-- Scroll top -->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+
     <script src="assets/js/swiper-bundle.min.js"></script>
->>>>>>> cde181c796f4175403fc423ea5c43150e8e0b86f
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
