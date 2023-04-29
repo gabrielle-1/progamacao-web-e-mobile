@@ -168,7 +168,6 @@ img {
     gap: 1.5rem;
 }
 
-
 .header {
     width: 100%;
     position: fixed;
@@ -813,7 +812,8 @@ img {
 
 .project__bg {
     background-color: var(--first-color-second);
-    padding-top: 3rem;
+    padding-top: 3rem;    
+    padding-bottom: 3rem;
 }
 
 .project__title {
@@ -1141,7 +1141,7 @@ img {
     }
 
     .about__img {
-        width: 350px;
+        width: 250px;
     }
 
     .about__description {
@@ -1186,7 +1186,7 @@ img {
     }
 
     .portifolio__img {
-        width: 320px;
+        width: 650px;
     }
 
     .portifolio__content {
@@ -1199,19 +1199,20 @@ img {
     }
     
     .project__bg {
-        background: none;        
+        background: none;   
+        padding-bottom: 3rem;     
     }
 
     .project__container {
         background-color: var(--first-color-second);
         border-radius: 1rem;
-        padding: 3rem 2.5rem 0;
+        padding: 3rem 2.5rem 3rem;
         grid-template-columns: 1fr max-content;
         column-gap: 3rem;
     }
 
     .project__data {
-        padding-top: .8rem;
+        padding-top: .8rem;        
     }
 
     .footer__container {
@@ -1248,7 +1249,6 @@ img {
     .footer__container {
         padding: 0;
     }
-
     .home__blob {
         width: 320px;
     }

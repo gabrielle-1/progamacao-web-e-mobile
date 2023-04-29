@@ -51,6 +51,7 @@ const qualificationTabs = document.querySelectorAll('[data-target]'),
     tabContents = document.querySelectorAll('[data-content]');
 
 qualificationTabs.forEach( tab => {
+    
     tab.addEventListener('click', () => {
         const target = document.querySelector(tab.dataset.target);
 
@@ -60,13 +61,13 @@ qualificationTabs.forEach( tab => {
 
         target.classList.add('qualification__active');
 
-        tab.forEach(tab => {
+        qualificationTabs.forEach(tab => {
             tab.classList.remove('qualification__active')
         })
 
         tab.classList.add('qualification__active')
     })
-})
+});
 
 // Modal
 
