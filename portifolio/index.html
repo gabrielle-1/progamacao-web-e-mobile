@@ -21,7 +21,7 @@
     <!-- Header -->
     <header class="header" id="header">
         <nav class="nav container">
-            <a href="#" class="nav__logo">Gabrielle</a>
+            <a href="#home" class="nav__logo">Gabrielle</a>
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list grid">
@@ -32,7 +32,7 @@
                     </li>
                     <li class="nav__item">
                         <a href="#about" class="nav__link">
-                            <i class="uil uil-user nav__icon"></i> About
+                            <i class="uil uil-user nav__icon"></i> Sobre
                         </a>
                     </li>
                     <li class="nav__item">
@@ -41,10 +41,15 @@
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#services" class="nav__link">
-                            <i class="uil uil-briefcase-alt nav__icon"></i> Services
+                        <a href="#qualification" class="nav__link">
+                            <i class="uil uil-briefcase-alt nav__icon"></i> Qualificação
                         </a>
-                    </li>
+                    </li>   
+                    <li class="nav__item">
+                    <a href="#services" class="nav__link">
+                            <i class="uil uil-briefcase-alt nav__icon"></i> Serviços
+                        </a>
+                    </li>                                   
                     <li class="nav__item">
                         <a href="#portifolio" class="nav__link">
                             <i class="uil uil-scenery nav__icon"></i> Portifolio
@@ -52,7 +57,7 @@
                     </li>
                     <li class="nav__item">
                         <a href="#contact" class="nav__link">
-                            <i class="uil uil-message nav__icon"></i> Contactme
+                            <i class="uil uil-message nav__icon"></i> Contato
                         </a>
                     </li>
                 </ul>
@@ -81,13 +86,10 @@
             <div class="home__container container grid">
                 <div class="home__content grid">
                     <div class="home__social">
-                        <a href="#" class="home__social-icon" target="_blank">
+                        <a href="https://www.linkedin.com/in/gabrielle-1" class="home__social-icon" target="_blank">
                             <i class="uil uil-linkedin-alt"></i>
-                        </a>
-                        <a href="#" class="home__social-icon" target="_blank">
-                            <i class="uil uil-dribbble"></i>
-                        </a>
-                        <a href="#" class="home__social-icon" target="_blank">
+                        </a>                        
+                        <a href="https://github.com/gabrielle-1" class="home__social-icon" target="_blank">
                             <i class="uil uil-github-alt"></i>
                         </a>                                              
                     </div>
@@ -144,7 +146,7 @@
             <span class="section__subtitle">Descrição</span>            
 
             <div class="about__container container grid">
-                <img src="assets/img/about-gabs.jpg" alt="" class="about__img">
+                <img src="assets/img/loading.gif" alt="" class="about__img">
 
                 <div class="about__data">
                     <p class="about__description">
@@ -353,9 +355,9 @@
         </section>
 
         <!-- Qualification -->
-        <section class="qualification section">
+        <section class="qualification section" id="qualification">
             <h2 class="section__title">Qualificação</h2>
-            <span class="section__subtitle">Minha jornada pessoal</span>
+            <span class="section__subtitle">Minha jornada profissional</span>
 
             <div class="qualification__container container">
                 <div class="qualification__tabs">
@@ -372,7 +374,7 @@
 
                 <div class="qualification__sections">
                     <!-- Qualification Content 1 -->
-                    <div class="qualification__content qualification__active" data-content id="education">
+                    <div class="qualification__content qualification__active" data-content="education" id="education">
                         <!-- Qualification 1 -->
                         <div class="qualification__data">
                             <div>
@@ -381,7 +383,7 @@
 
                                 <div class="qualification__calendar">
                                     <i class="uil uil-calendar-alt"></i>
-                                    200
+                                    2021 - 2025
                                 </div>
                             </div>
 
@@ -454,7 +456,7 @@
                     </div>
 
                     <!-- Qualification Content 2 -->
-                    <div class="qualification__content" data-content id="work">
+                    <div class="qualification__content" data-content="work" id="work">
                         <!-- Qualification 1 -->
                         <div class="qualification__data">
                             <div>
@@ -573,11 +575,7 @@
                                 <li class="services__modal-service">
                                     <i class="uil uil-check-circle services__modal-icon"></i>
                                     <p>Eu crio elementos com interação ux</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>...</p>
-                                </li>
+                                </li>                                
                             </ul>
                         </div>
                     </div>
@@ -587,6 +585,39 @@
                 <div class="services__content">
                     <div>
                         <i class="uil uil-arrow services__icon"></i>
+                        <h3 class="services__title">Backend <br> Developer </h3>
+                    </div>
+
+                    <span class="button button--flex button--small button--link services__button">
+                        Ver mais <i class="uil uil-arrow-right button__icon"></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <h4 class="services__modal-title">Backend <br> Developer </h4>
+                            <i class="uil uil-times services__modal-close"></i>
+
+                            <ul class="services__modal-services grid">
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Eu desenvolvo APIs para se conectar com o Front End</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Conexão com Banco de Dados</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Segurança e falhas</p>
+                                </li>                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service 3 -->
+                <div class="services__content">
+                    <div>
+                        <i class="uil uil-pen services__icon"></i>
                         <h3 class="services__title">Frontend <br> Developer </h3>
                     </div>
 
@@ -610,49 +641,8 @@
                                 </li>
                                 <li class="services__modal-service">
                                     <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>Eu crio elementos com interação ux</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>...</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- Service 3 -->
-                <div class="services__content">
-                    <div>
-                        <i class="uil uil-pen services__icon"></i>
-                        <h3 class="services__title">Branding <br> Designer </h3>
-                    </div>
-
-                    <span class="button button--flex button--small button--link services__button">
-                        Ver mais <i class="uil uil-arrow-right button__icon"></i>
-                    </span>
-
-                    <div class="services__modal">
-                        <div class="services__modal-content">
-                            <h4 class="services__modal-title">Branding <br> Design </h4>
-                            <i class="uil uil-times services__modal-close"></i>
-
-                            <ul class="services__modal-services grid">
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>Eu desenvolvo interfaces de usuário</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>Páginas web</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>Eu crio elementos com interação ux</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>...</p>
-                                </li>
+                                    <p>Consumo de APIs</p>
+                                </li>                                
                             </ul>
                         </div>
                     </div>
@@ -662,37 +652,37 @@
         </section>
 
         <!-- Portifolio -->
-        <!-- <section class="portifolio section" id="portifolio">
+        <section class="portifolio section" id="portifolio">
             <h2 class="section__title">Portifolio</h2>
             <span class="section__subtitle">Trabalhos mais recentes</span>
 
             <div class="portifolio__container container swiper">
                 <div class="swiper-wrapper">
                     
-                    < Portifolio 1 >
+                    <!-- Portifolio 1 -->
                     <div class="portifolio__content grid swiper-slide">
-                        <img src="assets/img/portfolio1.jpg" alt="" class="portifolio__img">
+                        <img src="assets/img/portfolio1.png" alt="" class="portifolio__img">
 
                         <div class="portifolio__data">
-                            <h3 class="portifolio__title">Website moderno </h3>
+                            <h3 class="portifolio__title">Recriação da tela inicial Netflix</h3>
                             <p class="portifolio__description">
-                                Website adaptado... e com animações e interações com o usuário
+                                Tela inicial da plataforma Netflix, com carrossel de imagens com animações e interações com o usuário.
                             </p>
-                            <a href="" class="button button--flex button--small portifolio__button">
+                            <a href="https://recriando-pagina-netflix.vercel.app/" target="_blank" class="button button--flex button--small portifolio__button">
                                 Demonstração 
                                 <i class="uil uil-arrow-right button__icon"></i>
                             </a>                            
                         </div>
                     </div>
 
-                    < Portifolio 2 >
+                    <!-- Portifolio 2 -->
                     <div class="portifolio__content grid swiper-slide">
-                        <img src="assets/img/portfolio2.jpg" alt="" class="portifolio__img">
+                        <img src="assets/img/portfolio2.png" alt="" class="portifolio__img">
 
                         <div class="portifolio__data">
-                            <h3 class="portifolio__title"> Brand Design </h3>                                
+                            <h3 class="portifolio__title">Prontoar</h3>                                
                             <p class="portifolio__description">
-                                Website adaptado... e com animações e interações com o usuário
+                                Website criado para a cadeira de Engenharia de Software. O objetivo é Unidades de Saúde possuírem um Prontuário Eletrônico e fácil de utilizar onde independe do local físico em que se encontra.
                             </p>
                             <a href="" class="button button--flex button--small portifolio__button">
                                 Demonstração 
@@ -701,8 +691,8 @@
                         </div>
                     </div>
 
-                    < Portifolio 3 >
-                    <div class="portifolio__content grid swiper-slide">
+                    <!-- Portifolio 3 -->
+                  <!-- <div class="portifolio__content grid swiper-slide">
                         <img src="assets/img/portfolio3.jpg" alt="" class="portifolio__img">
 
                         <div class="portifolio__data">
@@ -715,12 +705,12 @@
                                 <i class="uil uil-arrow-right button__icon"></i>
                             </a>                        
                         </div>
-                    </div>       
+                    </div>         -->
 
                 </div>
                 
                 <div class="swiper-arrows">
-                    < Arrows >
+                    <!-- Arrows -->
                     <div class="swiper-button-next">
                         <i class="uil uil-angle-right-b swiper-portifolio-icon"></i>
                     </div>
@@ -728,13 +718,13 @@
                         <i class="uil uil-angle-left-b swiper-portifolio-icon"></i>
                     </div>
 
-                    < Pagination >
+                    <!-- Pagination -->
                     <div class="swiper-pagination"></div>
                 </div>               
                 
             </div>
 
-        </section> -->
+        </section>
 
         <!-- Project in mind -->
         <section class="project section">
@@ -742,14 +732,14 @@
                 <div class="project__container container grid">
                     <div class="project__data">
                         <h2 class="project__title">Você tem um novo projeto?</h2>
-                        <p class="project__description">Contrate agora e receba 30% de desconto em seu novo projeto!</p>
+                        <p class="project__description">Contrate agora!</p>
                         <a href="#contact" class="button button--flex button--white">
                             Entre em contato
                             <i class="uil uil-message project__icon button__icon"></i>
                         </a>
                     </div>
 
-                    <img src="assets/img/project-gabs.png" alt="" class="project__img">
+                    <!-- <img src="assets/img/project.png" alt="" class="project__img"> -->
                 </div>
             </div>
         </section>
@@ -833,12 +823,15 @@
             <div class="footer__container container grid">
                 <div>
                     <h2 class="footer__title">Gabrielle</h2>
-                    <span class="footer__subtitle">Desenvolvedora Frontend</span>
+                    <span class="footer__subtitle">Desenvolvedora Backend & Frontend</span>
                 </div>
                 
                 <ul class="footer__links">
                     <li>
                         <a href="#services" class="footer__link">Serviços</a>
+                    </li>
+                    <li>
+                        <a href="#qualification" class="footer__link">Qualificação</a>
                     </li>
                     <li>
                         <a href="#portifolio" class="footer__link">Portifolio</a>
@@ -851,10 +844,7 @@
                 <div class="footer__socials">
                     <a href="https://github.com/gabrielle-1" class="footer__social" target="_blank">
                         <i class="uil uil-github"></i>
-                    </a>
-                    <a href="" class="footer__social" target="_blank">
-                        <i class="uil uil-instagram"></i>
-                    </a>
+                    </a>                    
                     <a href="https://www.linkedin.com/in/gabrielle-1" class="footer__social" target="_blank">
                         <i class="uil uil-linkedin"></i>
                     </a>
