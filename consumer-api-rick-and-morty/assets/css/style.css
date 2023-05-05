@@ -1,0 +1,143 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #020000f3;
+}
+
+.navbar {    
+    background-color: #e4e2e2;
+    height: 60px;
+    display: flex;
+    align-items: center;  
+    justify-content: space-between;  
+    text-decoration: none;
+}
+
+.navbar-nav {
+    display: flex;        
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-item {
+    margin-right: 10px;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.nav-link {
+    color: #020000;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.nav-link:hover {
+    color: #303030;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    height: 200px; /* define a altura do container */ 
+}
+
+.h1-title { 
+    color: #e4e2e2;
+    font-size: 30px;
+}
+
+.element {
+    position: absolute;
+    top: 50%; /* define a posição vertical do elemento */
+    left: 50%; /* define a posição horizontal do elemento */
+    transform: translate(-50%, -50%); /* centraliza o elemento horizontalmente e verticalmente */
+    width: 50%; /* define a largura do elemento */
+    text-align: center;
+    align-items: center;
+}
+
+.element:hover {
+    cursor: pointer;
+}
+
+.caption p {
+    margin-bottom: 5px; /* adicione um espaço de 5 pixels entre cada parágrafo */
+}
+
+.slider-img {    
+    text-align: center !important;
+    width: 300px !important;    
+}
+  
+.slider-img img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 2%;
+}
+
+.caption {
+    color: #e4e2e2;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px;
+    position: relative;
+    bottom: 0;
+    left: 0;    
+    z-index: 1;
+    text-align: initial;
+}
+
+.caption h1 {
+    word-wrap: break-word;
+    width: 400px;
+}
+
+.slick-bt {    
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-transform: translate(0,-50%);
+    -ms-transform: translate(0,-50%);
+    transform: translate(0,-50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: 0;
+    background: 0 0;
+}
+
+.slick-prev-bt {
+    left: -25px;
+}
+
+.slick-next-bt {
+    right: -25px;
+}
+
+.img-status {
+    width: 15px;
+    height: 15px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.status {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px; /* adicione um espaço de 5 pixels entre cada parágrafo */    
+}

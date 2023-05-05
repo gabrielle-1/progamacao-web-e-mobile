@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <title>Rick and Morty</title>
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar">
+            
+            <a href="#" class="nav-item"><img src="assets/img/rick-1.png" alt=""></a>
+
+            <ul class="navbar-nav">
+                <li class="nav-item">                    
+                    <a href="https://github.com/gabrielle-1" target="_blank" class="nav-link">Github</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href=""></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <div class="container">
+                <h1 class="h1-title">Personagens Rick and Morty</h1>
+                <div class="element">                    
+                    <div class="slider">                        
+                      </div>
+                  </div>
+            </div>
+        </article>
+    </main>
+
+    <script>
+        
+
+        fetch('https://rickandmortyapi.com/api/character')
+        .then(response => response.json())
+        .then(data => {
+            // Manipula o objeto JavaScript com os dados recebidos
+            const characters = data.results;
+
+            characters.forEach( (character) => {
+                const characterName = character.name;
+                let characterStatus = character.status;
+                let iconStatus = '';
+                const characterImage = character.image;
+                const characterSpecies = character.species;
+                let characterLocation = character.location.name;
+
+                // Validando os dados retornados
+                switch (characterStatus) {
+                    case "unknown" : 
+                        characterStatus =  "Desconhecido";
+                    break;
+                    case "Dead" : 
+                        iconStatus = "dead.png";
+                        characterStatus =  "Morto";
+                    break;
+                    case "Alive" : 
+                        iconStatus = "alive.png"
+                        characterStatus =  "Vivo";
+                    break;
+                }
+
+                characterLocation = characterLocation == "unknown" ? "Desconhecido" : characterLocation;
+
+                const imageCharacter = $('<img>');
+                    imageCharacter.attr('src', characterImage);
+
+                const divImage = $('<div>');
+                    divImage.addClass('slider-img');
+
+                let divContentCharacter = `
+                    <div class="caption">
+                        <h1>${characterName}</h1>
+                        <div class="status"> 
+                            <span>Status: ${characterStatus}</span>
+                            <img src="assets/img/${iconStatus}" class="img-status">
+                        </div>                        
+                        <p>Espécie: ${characterSpecies}</p>
+                        <p>Localidade: ${characterLocation}</p>
+                    </div>
+                `;
+
+                    divImage.append(divContentCharacter);
+               
+                    divImage.append(imageCharacter);
+
+                $('.slider').append(divImage);
+            });            
+            
+            $(document).ready(function(){
+                $('.slider').slick({
+                    // prevArrow: '<button type="button" class="slick-prev">Previous</button>',
+                    prevArrow: '<a class="slick-bt slick-prev-bt"><img src="assets/img/prev.png"></a>',
+                    nextArrow: '<a class="slick-bt slick-next-bt"><img src="assets/img/next.png"></a>',
+                });
+            });
+        })
+        .catch(error => console.error(error))
+
+      
+
+       
+    </script>
+</body>
+</html>
