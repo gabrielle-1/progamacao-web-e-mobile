@@ -554,6 +554,10 @@ img {
     width: 60%;
 }
 
+.skills_all {
+    display: flex;
+}
+
 .skills__close .skills__list{
     height: 0;
     overflow: hidden;
