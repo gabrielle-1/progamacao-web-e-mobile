@@ -69,6 +69,101 @@
     }
 }
 
+/* Loader Container */
+.load-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente */
+    z-index: 9999; /* Garante que o loader esteja na frente de outros elementos */
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Esconde o loader por padrão */
+.hide {
+    display: none;
+}
+
+/* Estilos do loader */
+
+.loader {
+    animation: is-rotating 1s infinite;
+    border: 8px solid #e5e5e5;
+    border-radius: 50%;
+    border-top-color: #51d4db;
+    height: 150px;
+    width: 150px !important;
+  }
+  
+  @keyframes is-rotating {
+    to {
+      transform: rotate(1turn);
+    }
+  }
+
+/* Animação de rotação */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#contact {
+    align-items: center;
+    justify-content: center;
+    position: relative;    
+}
+
+/* Popup */
+/* Estilos do Popup */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Estilize o botão de abertura do popup como desejado */
+#openPopup {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#openPopup:hover {
+    background-color: #2980b9;
+}
+
+
 /* Variáveis tema dark */
 body.dark-theme {
     /* HSL modo cor */
